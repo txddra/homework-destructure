@@ -24,11 +24,12 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
 
 
 //testing
-// console.log(river);
-// console.log(Atlantic)
-// console.log(ocean)
-    
-
+console.log(river);
+console.log(Atlantic);
+console.log(ocean);
+console.log(Arctic);
+//to space
+console.log( )
 
     
 
@@ -49,11 +50,13 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
 
 // items.map(({color, shape}))
 
+/* solution */
 items.map((items) =>{
     const {color, shape} = items;
     console.log(`${color} ${shape}`)
 })
-
+//to space
+console.log()
 
 
     // console.log(color, shape)
@@ -87,13 +90,13 @@ items.map((items) =>{
     otherShops: [
     'Bozo Repair',
     'Johnson Body',
-    'Fixer Upper Central',
+    'Fixer Upper Central', 
     'Last Chance Repairs',
     ],
     },
     };
 
-    // const{make} = car
+    // const{mak} = car
 
     // console.log(make)
 
@@ -103,7 +106,31 @@ items.map((items) =>{
     Using destructuring declare the make, color and year variables for each car and console.log the variables
     OR SHOULD I SAY declare the make, color and year and list a string for each showing their values.*/
     
-    
+    // let Cars = new car(/)
+// class Cars extends car{
+    // constructor()
+// }
+
+class Cars{
+    constructor(make, color, year){
+        this.make = make,
+        this.color = color,
+        this.year = year
+    }
+}
+
+// const {make, color, year} = Cars/;
+//Instantiation 
+let car1 = new Cars ('Jeep', 'White', '2014')
+let car2 = new Cars ('Toyota', 'Green', '2002')
+let car3 = new Cars ('Mazda', 'blue', '2020')
+console.log(car1);
+console.log(car2);
+console.log(car3)
+//logging
+console.log(`My ${year} ${make} is ${color}`)
+
+
  //7. Using destructuring, choose all the schools with a gpa higher than 3.5,
       //and list the chosen object ascending by major and log the average gpa,
       //use method chaining if you can
