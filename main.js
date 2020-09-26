@@ -17,11 +17,16 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
     },
     };
 
+//'solution'
     const {lake, river, ocean} = water;
- const { Atlantic = 'AT',Pacific = 'PA' , Indian  ='IN', Arctic = 'AR'} = water;
 
- console.log('AT')
+    const { Atlantic = 'AT', Pacific = 'PA' , Indian  ='IN', Arctic = 'AR'} = water;
 
+
+//testing
+// console.log(river);
+// console.log(Atlantic)
+// console.log(ocean)
     
 
 
@@ -33,6 +38,34 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
     { color: 'orange', shape: 'triangle' },
     { color: 'red', shape: 'square' },
     ];
+
+
+// const [{color, shape}] = items
+// const [{color},{shape}] = items
+
+// const [color, shape] = items
+// const {blue, orange, red} = color
+// const {circle, triangle, square } = shape
+
+// items.map(({color, shape}))
+
+items.map((items) =>{
+    const {color, shape} = items;
+    console.log(`${color} ${shape}`)
+})
+
+
+
+    // console.log(color, shape)
+    // console.log(color, shape)
+    // console.log(shape)
+    // console.log(items)
+// let newArr = items.map((element) =>{
+// console.log(`${element.color} ${element.shape}`)
+// })
+
+
+
 //5.  Deconstruct the complete car object literal
     //Find a way to call just one variable name for each of the carTypes
     //rename the array values inside the otherShops array to third, fourth, and for the last two values they should be in an array called fifth
@@ -59,6 +92,12 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
     ],
     },
     };
+
+    // const{make} = car
+
+    // console.log(make)
+
+
 /*6.  Create a class Cars that takes make, color, and year
     Instantiate 4 cars, car1,car2, car3, car4
     Using destructuring declare the make, color and year variables for each car and console.log the variables
@@ -69,10 +108,14 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
       //and list the chosen object ascending by major and log the average gpa,
       //use method chaining if you can
 
-// let schoolArray = [
-//   { school: ‘Pataway’, major: ‘comp sci’, year: ‘sophomore’, gpa: 3.2 },
-//   { school: ‘Bronxville’, major: ‘medicine’, year: ‘junior’, gpa: 4.0 },
-//   { school: ‘Scarsdale’, major: ‘accounting’, year: ‘freshman’, gpa: 2.6 },
-//   { school: ‘Peekskill’, major: ‘liberal arts’, year: ‘freshman’, gpa: 4.0 },
-//   { school: ‘Anopram’, major: ‘accounting’, year: ‘senior’, gpa: 3.7 },
-// ];
+let schoolArray = [
+  { school: 'Pataway', major: 'comp sci', year: 'sophomore', gpa: 3.2 },
+  { school: 'Bronxville', major: 'medicine', year: 'junior', gpa: 4.0 },
+  { school: 'Scarsdale', major: 'accounting', year: 'freshman', gpa: 2.6 },
+  { school: 'Peekskill', major: 'liberal arts', year: 'freshman', gpa: 4.0 },
+  { school: 'Anopram', major: 'accounting', year: 'senior', gpa: 3.7 },
+];
+const { school, major, gpa } = schoolArray
+
+
+// console.log(school, major, gpa)
