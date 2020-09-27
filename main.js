@@ -113,36 +113,49 @@ console.log()
 
 class Cars{
     constructor(make, color, year){
-        this.make = make,
-        this.color = color,
+        this.make = make;
+        this.color = color;
         this.year = year
     }
 }
 
-// const {make, color, year} = Cars/;
+
 //Instantiation 
-let car1 = new Cars ('Jeep', 'White', '2014')
-let car2 = new Cars ('Toyota', 'Green', '2002')
+let car1 = new Cars ('Jeep', 'white', '2014')
+
+//whenever i do this for more than one it's an issue
+const {make, color, year} =car1
+// can make one sentence
+console.log(`My ${year} ${make} is ${color}.`)
+
+let car2 = new Cars ('Toyota', 'green', '2002')
+// const {make, color, year} = car2
+
 let car3 = new Cars ('Mazda', 'blue', '2020')
-console.log(car1);
-console.log(car2);
-console.log(car3)
-//logging
-console.log(`My ${year} ${make} is ${color}`)
+
+let car4 = new Cars('Chevy', 'red', '1995')
+
+
+// console.log(car1);
+// console.log(car2);
+// console.log(car3)
+// //logging
+
 
 
  //7. Using destructuring, choose all the schools with a gpa higher than 3.5,
       //and list the chosen object ascending by major and log the average gpa,
-      //use method chaining if you can
+//       //use method chaining if you can
 
-let schoolArray = [
-  { school: 'Pataway', major: 'comp sci', year: 'sophomore', gpa: 3.2 },
-  { school: 'Bronxville', major: 'medicine', year: 'junior', gpa: 4.0 },
-  { school: 'Scarsdale', major: 'accounting', year: 'freshman', gpa: 2.6 },
-  { school: 'Peekskill', major: 'liberal arts', year: 'freshman', gpa: 4.0 },
-  { school: 'Anopram', major: 'accounting', year: 'senior', gpa: 3.7 },
-];
-const { school, major, gpa } = schoolArray
+// let schoolArray = [
+//   { school: 'Pataway', major: 'comp sci', year: 'sophomore', gpa: 3.2 },
+//   { school: 'Bronxville', major: 'medicine', year: 'junior', gpa: 4.0 },
+//   { school: 'Scarsdale', major: 'accounting', year: 'freshman', gpa: 2.6 },
+//   { school: 'Peekskill', major: 'liberal arts', year: 'freshman', gpa: 4.0 },
+//   { school: 'Anopram', major: 'accounting', year: 'senior', gpa: 3.7 },
+// ];
+// const {school, major, year, gpa}= schoolArray;
 
 
-// console.log(school, major, gpa)
+
+// console.log(gpa)
